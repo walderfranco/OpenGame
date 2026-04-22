@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "type": "module",
   "scripts": {
-    "build": "node ../../scripts/build_package.js",
+    "build": "node api.js && node ../../scripts/build_package.js",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
