@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "tsx scripts/test.ts",
-    "build": "echo 'Agent test uses tsx - no build needed'"
+    "build": "node init && echo 'Agent test uses tsx - no build needed'"
   },
   "keywords": [
     "opengame",
