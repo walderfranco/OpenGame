@@ -1,7 +1,9 @@
 {
   "typescript.tsserver.experimental.enableProjectDiagnostics": true,
   "editor.tabSize": 2,
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
   "[typescript]": {
@@ -13,5 +15,14 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "vitest.disableWorkspaceWarning": true
+  "vitest.disableWorkspaceWarning": true,
+  "task.allowAutomaticTasks": true,
+  "debug.openDebug": "neverOpen",
+  "terminal.integrated.inheritEnv": false,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
